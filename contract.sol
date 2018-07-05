@@ -56,7 +56,7 @@ contract CryptoTomatoes {
         claimedSeeds[msg.sender] = 0;
         lastEvent[msg.sender] = now;
         marketSeeds = SafeMath.add(marketSeeds, seedsCount);
-		totalOut[msg.sender] = SafeNath.add(totalOut[msg.sender], seedsValue);
+		totalOut[msg.sender] = SafeMath.add(totalOut[msg.sender], seedsValue);
         ownerAddress.transfer(fee);
         msg.sender.transfer(SafeMath.sub(seedsValue, fee));
     }
