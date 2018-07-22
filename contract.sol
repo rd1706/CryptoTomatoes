@@ -125,7 +125,6 @@ contract CryptoTomatoes {
 
 
 		function getMySeeds() public view returns(uint256) { 
-		getCellsSinceLastEvent(msg.sender)
         return SafeMath.add(claimedSeeds[msg.sender], getSeedsSinceLastEvent(msg.sender));
     }
 
