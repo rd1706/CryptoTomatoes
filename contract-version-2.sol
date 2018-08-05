@@ -7,7 +7,7 @@ contract CryptoTomatoes {
 		address public ownerAddress;
 		
 		bool public getFree = false;
-		uint public needToGetFree = 0.001 ether;
+		uint public needToGetFree = 0.001 ether; // variable is changed by the function
 		uint256 public STARTING_SEEDS = 500; 
 		
 		mapping (address => uint256) public ballanceTomatoes; 
